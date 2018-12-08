@@ -1,7 +1,9 @@
 const fetchUsers = async () =>
-    await (await fetch('/.netlify/functions/getusers')).json()
-    // fetch('http://localhost:9000/getusers')
+    await (await fetch('http://localhost:9000/getusers')).json()
+    // await (await fetch('/.netlify/functions/getusers')).json()
+
     fetchUsers().then(data => {
+        console.log('hey')
         userList = document.querySelector('#users');
         data.forEach(user => {
             const li = document.createElement('li');

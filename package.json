@@ -1,5 +1,5 @@
 {
-  "name": "netlify_aws_lamba",
+  "name": "netlify-lamba",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
